@@ -1,16 +1,15 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/counter'
+import SideMenu from './components/SideMenu/SideMenu'
 import {connect} from 'react-redux' 
 import {update} from './acitons'
 
 function App(props: any) {
   return (
     <div className="App">
-      <Counter
-      value={props.counter}
-      onIncrement={props.update}
-      />
+      <div>
+      <SideMenu />
+      </div>
     </div>
   );
 }
